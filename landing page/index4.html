@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <meta charset="utf-8">
+       <title>Landing Page</title>
+       <link rel="stylesheet" type="text/css" href="style4.css">
+       <script src="https://kit.fontawesome.com/e4780a578d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <section>
+            <div class="bg"></div>
+                   <header>
+                          <a href="#" class="logo">NIKS CLOTHES</a>
+                          <ul class="navbar">
+                                 <li><a href="#Home" class="active">Home</a></li>
+                                 <li><a href="#">Menu</a></li>
+                                 <li><a href="#">Services</a></li>
+                                 <li><a href="#">Contact</a></li>
+                          </ul>
+                   </header>
+            </div>
+            <div class="content">
+                   <div class="textbox">
+                          <h2>CLOTHES MAKE PERSON PERFECT</h2>
+                          <p>Clothing are items worn on the body. 
+                            Typically, clothing is made of fabrics or textiles, but over time it has included 
+                            garments made from animal skin and other thin sheets of materials and natural products 
+                            found in the environment, put together. The wearing of clothing is mostly restricted to 
+                            human beings and is a feature of all human societies. The amount and type of clothing worn 
+                            depends on gender, body type, social factors, and geographic considerations. Garments cover 
+                            the body, footwear covers the feet, gloves cover the hands, while hats and headgear cover the 
+                            head. Eyewear and jewelry are not generally considered items of clothing, but play an important 
+                            role in fashion and clothing as costume.</p>
+                            <button class="btn41-43 btn-41">Click</button>
+                   </div>
+                   <div class="imgbox">
+                          <img src="C:\Users\kirankanth\Downloads\fashion.png" class="fashion">
+                   </div>
+            </div>
+            <ul class="pictures">
+                   <li data="1" ><img src="men1.webp" onclick="slider('men1.webp');BackgroundColor('blue')"></li>
+                   <li data="2"><img src="men2.jpeg" onclick="slider('men2.jpeg');BackgroundColor('blue')"></li>
+                   <li data="3"><img src="ladies.jpeg" onclick="slider('ladies.jpeg');BackgroundColor('blue')"></li>
+                   <li data="4"><img src="ladies2.jpeg" onclick="slider('ladies2.jpeg');BackgroundColor('blue')"></li>
+                   <li data="4"><img src="kid.jpeg" onclick="slider('kid.jpeg');BackgroundColor('blue')"></li>
+                   <li data="4"><img src="kid2.jpeg" onclick="slider('kid2.jpeg');BackgroundColor('')"></li>
+            </ul>
+            <div class="socialmedia">
+                   <a href="#"><i class="fa fa-facebook"></i></a>
+                   <a href="#"><i class="fa fa-instagram"></i></a>
+                   <a href="#"><i class="fa fa-snapchat"></i></a>
+                   <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+     </section>
+     <script>
+            function slider(somthing) {
+                   document.querySelector('.fashion').src=somthing;
+            }
+            function BackgroundColor(color) {
+                   const bg=document.querySelector('.bg')
+                   bg.style.BackgroundColor=color;
+            }
+     </script>
+</body>
+</html>
